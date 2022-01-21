@@ -3,6 +3,7 @@ import Uniswap from "../ethereum/uniswap";
 import "semantic-ui-css/semantic.min.css";
 import web3 from "../ethereum/web3";
 import SwapForm from "../components/SwapForm";
+import { Link, Router } from "../routes";
 import {
   Button,
   Container,
@@ -27,7 +28,16 @@ class UniswapIndex extends Component {
     this.state = { activeItem: "home", tokenPrice: "1", address: "" };
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+    if(name !== 'Swap')
+    {
+      Router.pushRoute(name);
+    }
+    else{
+      Router.pushRoute('/');
+    }
+  }
 
   static async getInitialProps() {
     const _addr = await Uniswap.methods.owner().call();
@@ -49,12 +59,12 @@ class UniswapIndex extends Component {
 
   render() {
     return (
-      <Layout
-        act={this.state.activeItem}
-        handleItemClick={this.handleItemClick}
-        latestGasPrice={this.state.latestGasPrice}
-      >
-        <div>
+        <Layout
+         act={this.state.activeItem}
+         handleItemClick={this.handleItemClick}
+         latestGasPrice={this.state.latestGasPrice}
+       >
+         <div>
           <link
             async
             rel="stylesheet"
@@ -72,7 +82,7 @@ class UniswapIndex extends Component {
               </Segment>
             </Grid.Column>
           </Grid>
-        </div>
+        </div> 
       </Layout>
     );
   }

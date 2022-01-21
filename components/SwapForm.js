@@ -15,10 +15,10 @@ import {
 import { FaArrowDown, FaBeer, FaShieldAlt } from "react-icons/fa";
 
 class SwapForm extends React.Component {
-  //   constructorconstructor(props) {
-  //     // this.onSwap = this.onSwap.bind(this);
-  //     this.handleInputchange = this.handleInputchange.bind(this);
-  //   }
+    constructorconstructor(props) {
+      this.onSwap = this.onSwap.bind(this);
+      this.handleInputchange = this.handleInputchange.bind(this);
+    }
 
   state = { tokenA: "0", tokenPrice: "1", ethIsTokenA: true };
 
@@ -104,8 +104,6 @@ class SwapForm extends React.Component {
           </button>
           <br />
           <br />
-
-          {/* <SwapFormInput ethIsTokenA = { !this.state.ethIsTokenA} handleInpCh = {this.handleInputchange}/> */}
 
           <Form.Field>
             <Input
