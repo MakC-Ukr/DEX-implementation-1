@@ -1,0 +1,94 @@
+[
+  { inputs: [], stateMutability: 'nonpayable', type: 'constructor' },
+  {
+    inputs: [ [Object], [Object], [Object] ],
+    name: '_swap',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'balance',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [ [Object] ],
+    name: 'getTokenBalance',
+    outputs: [ [Object] ],
+    stateMutability: 'nonpayable',
+    type: 'function'
+  },
+  {
+    inputs: [ [Object] ],
+    name: 'init',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'owner',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'poolInit',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'protocolFees',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'setTokenToEthPrice',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'swapEthToToken',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function'
+  },
+  {
+    inputs: [ [Object] ],
+    name: 'swapTokenToEth',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'tempTokenPrice',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'tokenAddress',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  },
+  {
+    inputs: [],
+    name: 'totalLiquidity',
+    outputs: [ [Object] ],
+    stateMutability: 'view',
+    type: 'function'
+  }
+]
